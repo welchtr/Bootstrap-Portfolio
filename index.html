@@ -9,12 +9,20 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
-  <body>
-    <div class="container-fullwidth navbar-default bg-light">
-      <div class="row">
-      <div class="col-8">Tiara Welch</div>
 
-      <div class="col-4">
+
+  <body>
+    <!-- Header / Navbar Properties -->
+    <div class="container-fullwidth navbar-default flex-column flex-md-row bd-navbar" style="height: 50px; background-color: white">
+      <div class="row" style="height:50px;">
+        <div class="card offset-md-2">
+          <div class="card-body" style="background-color: #4aaaa5; height:50px;">
+            Tiara Welch
+          </div>
+        </div>
+        <!-- <div class="d-inline-block offset-md-2 text-white text-center" style="width: 150px; height:50px; background-color: #4aaaa5; font-size:25px;"> Tiara Welch </div> -->
+
+      <div class="offset-md-6">
         <ul class="list-inline">
         <li class="list-inline-item"><a href="index.html"> About</a></li>
 
@@ -27,15 +35,18 @@
     </div> <!-- Closing Row Class -->
 </div> <!-- Closing Container Div -->
 
-<div class="container">
+<!-- Main Section Properties -->
+<div class="container-fluid" style="background-image: url(assets/images/pink_rice.png);">
 
   <div class="row">
     <div class="col-8"><!-- About Me Column -->
-      <div class="card" style="width: 40rem;">
+      <div class="card offset-md-2" style="width: 40rem;">
       <div class="card-body";>
         <h4 class="card-title">About Me</h4>
         <hr></hr>
-        <img src= "assets/images/tiara-800.jpg" width: "200" height="200" align="left" alt="Tiara Professional Headshot">     <p>Tiara is the production and billing manger for a liberal political multimedia production company called SWAY.  </p>
+
+        <!-- <img src="..." class="img-fluid" alt="Responsive image"> -->
+        <img src= "assets/images/tiara-800.jpg" class="img-fluid" width="200" height="200" align="left" alt="Tiara Professional Headshot">     <p>Tiara is the production and billing manger for a liberal political multimedia production company called SWAY.  </p>
 
           <p>She is a Washington D.C native who received her Bachelor of Arts in journalism from Miami University of Ohio. </p>
 
@@ -69,8 +80,8 @@
 </div> <!-- Closing Container Div - Main Section -->
 
 <!-- Footer -->
-<div class="fixed-bottom">
-<div class="card-footer text-muted">
+<div class="sticky-bottom">
+<div class="card-footer text-muted text-center">
    Copywrite &copy; 2017 Tiara Welch
  </div>
  </div>

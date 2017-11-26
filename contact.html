@@ -10,34 +10,58 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container-fullwidth navbar-default bg-light">
-      <div class="row">
-      <div class="col-8">Tiara Welch</div>
 
-      <div class="col-4">
-        <ul class="list-inline">
-        <li class="list-inline-item"><a href="index.html"> About</a></li>
+    <div class="container-fullwidth navbar-default flex-column flex-md-row bd-navbar" style="height: 50px; background-color: white">
+      <div class="row" style="height:50px;">
+        <div class="card offset-md-2">
+          <div class="card-body" style="background-color: #4aaaa5; height:50px;">
+            Tiara Welch
+          </div>
+        </div>
 
-        <li class="list-inline-item"><a href="portfolio.html"> Portfolio</a></li>
-        <li class="list-inline-item"><a href="contact.html"> Contact </a></li>
-      </ul>
+
+        <div class="offset-md-6">
+          <ul class="list-inline">
+          <li class="list-inline-item"><a href="index.html"> About</a></li>
+
+          <li class="list-inline-item"><a href="portfolio.html"> Portfolio</a></li>
+          <li class="list-inline-item"><a href="contact.html"> Contact </a></li>
+        </ul>
 
 
     </div> <!-- Closing Col-4 Class -->
     </div> <!-- Closing Row Class -->
 </div> <!-- Closing Container Div -->
+</div>
 
-<div class="container">
+<div class="container-fluid" style="background-image: url(assets/images/pink_rice.png);">
 
   <div class="row">
     <div class="col-8"><!-- About Me Column -->
-      <div class="card" style="width: 40rem;">
+      <div class="card offset-md-2" style="width: 40rem;">
       <div class="card-body";>
-      <------  FORM GOES HERE ----->
+        <h4 class="card-title">Send A Message</h4>
       </div>
+        <hr></hr>
+        <div class="card-block">
+            <form role="form">
+                <div class="form-group col-lg-12">
+                    <label class="form-control-label" for="form-group-input">Name</label>
+                    <input type="text" class="form-control" id="form-group-input" name="name">
+                </div>
+                <div class="form-group col-lg-12">
+                    <label class="form-control-label" for="form-group-input">Email</label>
+                    <input type="text" class="form-control" id="form-group-input" name="email">
+                </div>
+                <div class="form-group col-lg-12">
+                    <label class="form-control-label" for="form-group-input">Message:</label>
+                    <textarea class="form-control" id="form-group-input" name="notes" rows="6"></textarea>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+        </div>
     </div>
-  </div> <!-- Closing Col-8 Div -->
-
+  </div>
 
     <div class="col-4"> <!-- Contact Me Column -->
       <div class="card" style="width: 20rem;">
@@ -59,12 +83,14 @@
 </div> <!-- Closing Contact Me Column -->
 
 </div> <!-- Closing Row Div - Main Section -->
-</div> <!-- Closing Container Div - Main Section -->
+</div>
 
 <!-- Footer -->
-<div class="fixed-bottom">
-<div class="card-footer text-muted">
+
+<div class="sticky-bottom">
+<div class="card-footer text-muted text-center bg-light">
    Copywrite &copy; 2017 Tiara Welch
+
  </div>
  </div>
 
